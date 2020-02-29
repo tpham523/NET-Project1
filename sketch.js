@@ -65,10 +65,12 @@ function draw_bot() // Convert bot pox to grid pos & draw bot.
     
     // Get interior pixel color [RGBA] array for each cell in a 3-cell window.
     let acolors1 = get(x + sz2, y + sz2);       // cell 1
-    let acolors2 = get(x + 10 + sz2, y + sz2);  // cell 2
-    let acolors3 = get(x + 20 + sz2, y + sz2)   // cell 3
+    let acolors2 = get(x + sz + sz2, y + sz2);  // cell 2
+    let acolors3 = get(x + (sz*2) + sz2, y + sz2)   // cell 3
 
     // Get the sum of color array to check whether the cell is black or white
+    //if sum is 0, cell is black
+    //if sum is 765 (255 * 3), cell is white
     let pix1 = acolors1[0] + acolors1[1] + acolors1[2]
     let pix2 = acolors2[0] + acolors2[1] + acolors2[2]
     let pix3 = acolors3[0] + acolors3[1] + acolors3[2]
