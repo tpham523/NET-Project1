@@ -1,10 +1,12 @@
-// Draw stuff, with P5  // CF p5js.org/reference
-// Time-stamp: <2020-02-02 14:46:00 Chuck Siska>
-// ------------------------------------------------------------
+/* Project 1: Cella Rule 150 - CS335-02 
+by Nidhi Shah ( nidhi989@csu.fullerton.edu)& 
+Emily Pham ( tpham523@csu.fullerton.edu)&
+Tai Nguyen ( tainguyen@csu.fullerton.edu)
 
-// =====================================================  draw_grid ====
-// Draw a fancy grid with major & minor lines 
-// & major row/col numbers.
+This Javascript file draws a grid with major and minor lines.
+
+Borrowed from Professor Siska. */
+
 function draw_grid( rminor, rmajor, rstroke, rfill  ) 
 {
     stroke( rstroke );
