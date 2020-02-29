@@ -9,18 +9,16 @@ Members:
 Time-stamp: <2020-02-29 23:00:00 NETs Team>
 ------------------------------------------------------------
 
-Intro
+Introduction:
 
-  This project is to write a program to display the generational progress of Wolfram's Rule-150 cellular
-automaton. The program will be written in Javascript and P5.JS (for animation) with an HTML web page for
-display. The cella "growth generations" will be shown in a 2D grid of black and white cells. Each row after the top
-will show the next generation; the top row being the initial setup generation. Each generation is a stage in the
-“life” of the cellular automaton.
-  The program initializes a 101 by 101 square grid to have all cells full (state 1). Each row will
-represent a growth generation, with the top row being the initial generation. Then set the top row's 201st (the
-center) cell in state 0. This represents the initial generation.
-  The program analyzes each 3-cell triple from the left – moving a 3-cell “window” to
-the right by 1 cell, and generating the correct center cell state on the row below the triple-cell by Wolfram's Rule-150
+  This project is to display the generational progress of Wolfram's Rule-150 cellular Automaton.
+  The program is written in Javascript and P5.JS (for animation) with an HTML web page for
+display. The cella "growth generations" will be shown in 101 by 101 square grid canvas.Each row is representing the generation.
+The top row being the initial setup generation. Each generation is a stage in the “life” of the cellular automaton.
+
+How Prpgram works:
+
+  The program initializes a 101 by 101 square grid canvas with each cell size is 10*10. The initialize color for the cell will be black as representing state 1. The Wolfram's Rule-150 automaton animation will start by setting the top row's 201st (the center) cell with state 0.(showing by changing it from black to white color) The first row becomes the initial generation. Then,the program analyzes each 3-cell triple from the left – moving at 3-cell “window” to the right by 1 cell. Those 3-cell state generate the state of the center cell, below those triple-cell in the next generation by Wolfram's Rule-150. If the state result is 1 -the center cell remains black. But, if the center cell state become 0 , the color of the cell will be white. More, the animation by using the P5.JS will highlight the center cell in each cycle with yellow border changes.
   
 
 Zip Contents
