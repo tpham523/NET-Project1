@@ -16,7 +16,7 @@ automaton. The program will be written in Javascript and P5.JS (for animation) w
 display. The cella "growth generations" will be shown in a 2D grid of black and white cells. Each row after the top
 will show the next generation; the top row being the initial setup generation. Each generation is a stage in the
 “life” of the cellular automaton.
-  The program initializes a 401 by 401 square grid to have all cells full (state 1). Each row will
+  The program initializes a 101 by 101 square grid to have all cells full (state 1). Each row will
 represent a growth generation, with the top row being the initial generation. Then set the top row's 201st (the
 center) cell in state 0. This represents the initial generation.
   The program analyzes each 3-cell triple from the left – moving a 3-cell “window” to
@@ -46,15 +46,16 @@ Installation & Running
 
 External Requirements: N/A
 
-Known Bugs: N/A
+Known Bugs: 
+  o- Yellow borders of the last generation's cells might slightly stays higher the bottom edge of the grid.
 
 Warnings
 
-  o- Testing was light.  Didn't try all key or mouse combos.
+  o- Testing was light.  Not all keys are tried. Only Google Chrome Browser is tested on.
 
 Testing
 
-  o- Following installation instruction, used a few keypresses and no mouse click.
+  o- Following installation instruction, used a few keypresses to see if the program stops and starts as designed.
 
 Credits
 
