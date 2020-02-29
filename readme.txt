@@ -1,75 +1,61 @@
-Readme for js-p5-example
-Time-stamp: <2020-02-02 16:49:25 Chuck Siska>
+
+ CPSC 335-03
+Project 1 - Cella Rule 150
+Team: NETs
+Members: 
+	Nidhi Shah ( nidhi989@csu.fullerton.edu)& 
+	Emily Pham ( tpham523@csu.fullerton.edu)&
+	Tai Nguyen ( tainguyen@csu.fullerton.edu)
+Time-stamp: <2020-02-29 23:00:00 NETs Team>
 ------------------------------------------------------------
 
-Tntro
+Intro
 
-  This example draws a grid and runs an invisible bot from cell to cell
-  on the grid changing its colors.  You can stop/restart the bot with
-  any keypress.  You can move the bot to any cell with a mouse-click.
-
-  This is an example project using HTML, Javascript (JS), and P5.js
-  which is a JS-adapted version of the Processing Language.  CF HTML and
-  JS on the web (eg, Wikipedia).  More on P5 is at
-  p5js.org/reference.and at github.com/processing/p5.js/wiki.
-
-  P5 provides sutomated animation (via a user-built "draw" function),
-  and GUI manipulation functions that are simpler than JS.
+  This project is to write a program to display the generational progress of Wolfram's Rule-150 cellular
+automaton. The program will be written in Javascript and P5.JS (for animation) with an HTML web page for
+display. The cella "growth generations" will be shown in a 2D grid of black and white cells. Each row after the top
+will show the next generation; the top row being the initial setup generation. Each generation is a stage in the
+“life” of the cellular automaton.
+  The program initializes a 401 by 401 square grid to have all cells full (state 1). Each row will
+represent a growth generation, with the top row being the initial generation. Then set the top row's 201st (the
+center) cell in state 0. This represents the initial generation.
+  The program analyzes each 3-cell triple from the left – moving a 3-cell “window” to
+the right by 1 cell, and generating the correct center cell state on the row below the triple-cell by Wolfram's Rule-150
+  
 
 Zip Contents
 
-  File readme.txt.  This file.
+  File readme.txt.
 
-  File pix-js-p5-example-1.JPG.  A snapshot of the example webpage.
+  File BigOAnalysis-Project1.docx
 
-  File index-js-p5-example.html. Drag and drop this into a browser to
-    run the example.
+  File p5.js
 
-  File p5.js. This is the P5 package.
+  File sketch.js.
 
-  File cs-sketch.js; This contains several P5 user-defined linkage functions
-   (setup, draw, keyPressed, and mousePressed), as well as example
-    support functions.
-
-  File assets/styles.css.  This is an extra-small example of controlling
-    webpage styling.
-
-  File assets/draw-stuff.js. This is an example to show loading a JS
-    script file from a folder other than the index.html file's
-    location.  It also includes the utility draw_grid function written
-    in P5+JS.  (Picture "snapped" with the Windows Snip tool.)
+  File assets/styles.css.  
+  
+  File assets/draw-stuff.js.
 
 Installation & Running
 
   1. Extract the .zip file into a folder.
 
-  2. Drag the index HTML file, index-js-p5-example.html, into a browser
-    window.  The example P5 program should start immediately.  You
-    should see a 640x480 grid (white lines on black background) with
-    row/column headers and some of the grid cells colored.  See the
-    picture pix-js-p5-example-1.JPG.
+  2. Drag the index HTML file, index.html, into a browser
+    window.  The program should start immediately.
 
-Known Bugs
+External Requirements: N/A
 
-  o- Bot cell drawing over-writes a pixels-worth of the cell's grid lines.
+Known Bugs: N/A
 
 Warnings
-
-  o- Clicking outside the grid wraps the mouse x.y back into the grid --
-     maybe at a weird-looking spot.  Enjoy.
 
   o- Testing was light.  Didn't try all key or mouse combos.
 
 Testing
 
-  o- Following installation instruction, above, watched it run, and
-  tryed a few keypresses and mouse clicks.  Looks okay to ship.
+  o- Following installation instruction, used a few keypresses and no mouse click.
 
 Credits
 
-  Some code was borrowed and modified from "Introducing JavaScript Game
-  Development" by Stuart.  
-    Introducing JavaScript Game Development: Build a 2D Game from the
-    Ground Up, by Graeme Stuart, 2018, 209 pages.
-
-  And, of course, thanks to the HTML and P5.js developers.
+  The code is based on the source code provided by Professor Siska with our own modification.
