@@ -1,4 +1,4 @@
-/* Project 1: Cella Rule 150 - CS335-02 
+/* Project 1: Cella Rule 150 - CPSC-335-03 
 by Nidhi Shah ( nidhi989@csu.fullerton.edu)& 
 Emily Pham ( tpham523@csu.fullerton.edu)&
 Tai Nguyen ( tainguyen@csu.fullerton.edu)
