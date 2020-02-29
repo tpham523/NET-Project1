@@ -7,10 +7,9 @@ This Javascript file draws a grid with major and minor lines.
 
 Borrowed from Professor Siska. */
 
-function draw_grid( rminor, rmajor, rstroke, rfill  ) 
+function draw_grid( rminor, rmajor, rstroke ) 
 {
     stroke( rstroke );
-    fill( rfill );;
     let sz = g_canvas.cell_size;
     let width = g_canvas.wid*sz;
     let height = g_canvas.hgt*sz

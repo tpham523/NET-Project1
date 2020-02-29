@@ -25,7 +25,7 @@ function setup() // P5 Setup Fcn
     let width = sz * g_canvas.wid; // Our 'canvas' uses cells of given size, not 1x1 pixels.
     let height = sz * g_canvas.hgt;
     createCanvas(width, height); // Make a P5 canvas.
-    draw_grid(10, 50, 'white', 'yellow');
+    draw_grid(10, 50, 'white');
     fill('white');
     noStroke();
     rect(200, 0, 10, 10);
@@ -107,18 +107,15 @@ function fillCell(rx, ry, rcolor) { // paint the child cell
     rect(rx, ry, big, big);
 }
 
-function draw_update() // Update our display.
-{
-    //console.log( "g_frame_cnt = " + g_frame_cnt );
-    move_bot();
-    draw_bot();
-}
 
 function draw() // P5 Frame Re-draw Fcn, Called for Every Frame.
 {
     ++g_frame_cnt;
     if (0 == g_frame_cnt % g_frame_mod) {
-        if (!g_stop) draw_update();
+        if (!g_stop) {
+            move_bot();
+            draw_bot();
+        }
     }
 
 }
