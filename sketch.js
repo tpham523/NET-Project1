@@ -15,7 +15,7 @@ var g_canvas = {
     hgt: 101
 }; // JS Global var, w canvas size info.
 var g_frame_cnt = 0; // Setup a P5 display-frame counter, to do anim
-var g_frame_mod = 15; // Update ever 'mod' frames.
+var g_frame_mod = 2; // Update ever 'mod' frames.
 var g_stop = 0; // Go by default.
 
 
