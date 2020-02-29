@@ -11,11 +11,11 @@ The code is based on the source code provided by Professor Siska with our own mo
 // Make global g_canvas JS 'object': a key-value 'dictionary'.
 var g_canvas = {
     cell_size: 10,
-    wid: 41,
-    hgt: 41
+    wid: 101,
+    hgt: 101
 }; // JS Global var, w canvas size info.
 var g_frame_cnt = 0; // Setup a P5 display-frame counter, to do anim
-var g_frame_mod = 16; // Update ever 'mod' frames.
+var g_frame_mod = 15; // Update ever 'mod' frames.
 var g_stop = 0; // Go by default.
 
 
@@ -28,7 +28,7 @@ function setup() // P5 Setup Fcn
     draw_grid(10, 50, 'white');
     fill('white');
     noStroke();
-    rect(200, 0, 10, 10);
+    rect(500, 0, 10, 10);
 }
 
 var g_bot = {
@@ -37,9 +37,9 @@ var g_bot = {
 }; // Coordinates of the bot
 var g_box = {
     t: 1,
-    hgt: 40,
+    hgt: 100,
     l: 1,
-    wid: 40
+    wid: 100
 }; // Box in which bot can move.
 
 function move_bot() 
